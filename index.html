@@ -43,16 +43,16 @@
         <nav class="nav">
           <ul class="nav__links">
             <li class="nav__link">
-              <a href="#menu" class="nav__link_type-item">Menu</a>
+              <a href="#menu" class="nav__link">Menu</a>
             </li>
             <li class="nav__link">
-              <a href="#recipes" class="nav__link-item">Recipes</a>
+              <a href="#recipes" class="nav__link">Recipes</a>
             </li>
             <li class="nav__link">
-              <a href="#reservation" class="nav__link-item">Book a table</a>
+              <a href="#reservation" class="nav__link">Book a table</a>
             </li>
             <li class="nav__link">
-              <a href="contacts" class="nav__link-item">Contacts</a>
+              <a href="contacts" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -86,66 +86,66 @@
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
           <div class="menu__cards">
-            <div class="menu__card-type-filter">
-              <h3 class="menu__card_title-type-filter">Filter</h3>
-              <ul class="card__list_type-filter">
-                <li class="card__item_type-filter">
+            <div class="menu__card">
+              <h3 class="menu__card-title">Filter</h3>
+              <ul class="menu__card-list">
+                <li class="menu__card-item">
                   Regular(12oz)______________________________________________________$1
                 </li>
-                <li class="card__item_type-filter">
+                <li class="menu__card-item">
                   Large(16oz)_____________________________________________________$1.25
                 </li>
-                <li class="card__item_type-filter">
+                <li class="menu__card-item">
                   XL
                   (20oz)_________________________________________________________$1.5
                 </li>
-                <li class="card__item_type-filter">
+                <li class="menu__card-item">
                   Party-Size (24 oz)
                   decaf)_________________________________________$1.75
                 </li>
-                <li class="card__item_type-filter">
+                <li class="menu__card-item">
                   Iced Coffe (16
                   oz)________________________________________________$1.25
                 </li>
               </ul>
             </div>
-            <div class="card__espresso">
-              <h3 class="card__title_type-espresso">Espresso</h3>
-              <ul class="card__list_type-espresso">
-                <li class="card__item_type-espresso">
+            <div class="menu__card">
+              <h3 class="menu__card-title">Espresso</h3>
+              <ul class="menu__card-list">
+                <li class="menu__card-item">
                   Macchiato___________________________________________________$2.25
                 </li>
-                <li class="card__item_type-espresso">
+                <li class="menu__card-item">
                   Cortado_______________________________________________________$2.5
                 </li>
-                <li class="card__item_type-espresso">
+                <li class="menu__card-item">
                   Mocha__________________________________________________________$3
                 </li>
-                <li class="card__item_type-espresso">
+                <li class="menu__card-item">
                   Sunrise in the Bay Area
                   (decaf)________________________________$10
                 </li>
               </ul>
             </div>
-            <div class="card__cake">
-              <h3 class="care__title_type-cake">Baked Goods</h3>
-              <ul class="card__list_type-cake">
-                <li class="card__item_type-cake">
+            <div class="menu__card">
+              <h3 class="menu__card-title">Baked Goods</h3>
+              <ul class="menu__card-list">
+                <li class="menu__card-item">
                   Almond Croissant_____________________________________$2
                 </li>
-                <li class="card__item_type-cake">
+                <li class="menu__card-item">
                   Banana Bread______________________________________$1.75
                 </li>
-                <li class="card__item_type-cake">
+                <li class="menu__card-item">
                   Key Lime Pie__________________________________________$3
                 </li>
-                <li class="card__item_type-cake">
+                <li class="menu__card-item">
                   Blue Velvet Cake___________________________________$3.75
                 </li>
-                <li class="card__item_type-cake">
+                <li class="menu__card-item">
                   Web Cookie___________________________________________$2
                 </li>
-                <li class="card__item_type-cake">
+                <li class="menu__card-item">
                   Fresh Buguette_____________________________________$0.75
                 </li>
               </ul>
@@ -194,19 +194,19 @@
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form">
-            <fieldset class="form__personal_info">
-              <label for="name" class="form__personal_info_label"
+            <fieldset class="reservation__personal-info">
+              <label for="name" class="reservation__personal-info-label"
                 >Name *
                 <input
                   type="text"
                   id="name"
                   name="name"
                   value=" Name Surname"
-                  class="form__personal_info_item"
+                  class="reservation__personal-info"
                   required
                 />
               </label>
-              <label for="number-of"
+              <label for="number-of" class="reservation__personal-info-label"
                 >Number of guests *
                 <input
                   type="number"
@@ -215,11 +215,11 @@
                   placeholder=" 1-8"
                   min="1"
                   max="8"
-                  class="form__personal_info_item"
+                  class="reservation__personal-info"
                   required
                 />
               </label>
-              <label for="date&time" class="form__personal_info_label"
+              <label for="date&time" class="reservation__personal-info-label"
                 >Date & Time *
               </label>
               <input
@@ -229,30 +229,30 @@
                 value=""
                 min="2017-04-01"
                 max="2030-01-01"
-                class="form__personal_info_item"
+                class="reservation__personal-info"
                 required
               />
-              <label for="e-mail" class="form__personal_info_label"
+              <label for="e-mail" class="reservation__personal-info-label"
                 >Your email *
                 <input
                   id="e-mail"
                   type="email"
                   name="email"
                   placeholder=" mail@email.com"
-                  class="form__personal_info_item"
+                  class="reservation__personal-info"
                   required
                 />
               </label>
             </fieldset>
-            <fieldset class="form__submit">
-              <button class="form__sumbit_button">Book a table</button>
+            <fieldset class="reservation__submit">
+              <button class="reservation__sumbit_button">Book a table</button>
               <input
                 type="checkbox"
-                class="from__submit_radio"
+                class="reservation__submit_radio"
                 id="radioC"
                 required
               />
-              <label for="radioC" class="form__submit_radio"
+              <label for="radioC" class="reservation__submit_radio"
                 >I agree with the terms of use</label
               >
             </fieldset>
@@ -276,7 +276,7 @@
               cups!
             </p>
             <div class="about__circle"></div>
-            <div class="about__circle_animation_blurred"></div>
+            <div class="about__animation-blurred"></div>
           </div>
           <div class="footer__footer">
             <div class="footer__content">
@@ -285,11 +285,11 @@
                 alt="yandex practicum logo"
                 class="footer__image"
               />
-              <div class="content__social">
-                <h2 class="footer__content_header">Social Media</h2>
+              <div class="footer__bar">
+                <h2 class="footer__header">Social Media</h2>
                 <ul class="footer__list">
-                  <li class="footer__list-item">
-                    <a href="#" class="footer__list-link"
+                  <li class="footer__item">
+                    <a href="#" class="footer__link"
                       ><img
                         src="./images/facebook_white.svg"
                         alt="facebook icon"
@@ -298,8 +298,8 @@
                       Facebook</a
                     >
                   </li>
-                  <li class="footer__list-item">
-                    <a href="#" class="footer__list-link"
+                  <li class="footer__item">
+                    <a href="#" class="footer__list"
                       ><img
                         src="./images/instagram_white.svg"
                         alt="instagram icon"
@@ -311,7 +311,7 @@
                 </ul>
               </div>
             </div>
-            <p class="footer_copyrights">© 2022 Daniel M.</p>
+            <p class="footer__copyrights">© 2022 Daniel M.</p>
           </div>
         </section>
       </footer>
