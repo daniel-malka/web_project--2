@@ -1,0 +1,467 @@
+@import url("../vendor/normalize.css");
+* {
+  margin: 0;
+}
+.page {
+  font-family: "Inter", "Ariel", "sans-serif";
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #fff;
+  background-image: url(../images/background_header.svg);
+  background-position: center;
+  background-size: cover;
+  min-height: 720px;
+  max-height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  top: 30px;
+  right: 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  font-size: 16px;
+  column-gap: 20px;
+}
+.header__text {
+  z-index: 2;
+  position: absolute;
+  top: 250px;
+  left: 80px;
+}
+.header__title-styled {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 72px;
+  color: #2f80ed;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.header__title {
+  font-family: "Inter";
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.header__description {
+  max-width: 600px;
+  margin-top: 28px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.header__caffe_image {
+  max-width: 636px;
+  height: auto;
+  position: absolute;
+  top: 124px;
+  right: 5px;
+}
+
+.header__footer {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  padding-left: 80px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.header__hours {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.header__address {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-end: 0px;
+  position: absolute;
+  right: 160px;
+  bottom: 0;
+  align-self: flex-end;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.menu {
+  background-color: #0a2750;
+  background-image: url(../images/background_menu.svg);
+  padding: 100px 150px;
+  background-position: center;
+  background-size: cover;
+  min-height: 720px;
+  position: relative;
+}
+.menu__title {
+  color: #fff;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+.menu__subtitle {
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 780px;
+  margin: 24px auto 100px auto;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.menu__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 100px;
+  column-gap: 100px;
+}
+.card__cake,
+.card__espresso,
+.card__filter {
+  max-width: 600px;
+}
+.card__title_type-espresso,
+.care__title_type-cake,
+.card__title_type-filter {
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  padding-inline-start: 0;
+  margin-bottom: 30px;
+}
+
+.card__list_type-filter,
+.card__list_type-espresso,
+.card__list_type-cake {
+  color: #fff;
+  list-style-type: none;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  line-height: 20px;
+}
+.menu_type_filter-items,
+.card__item_type-cake,
+.card__item_type-espresso {
+  margin-top: 15px;
+}
+.recipes {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-image: url(../images/background_recipes.svg);
+  background-position: center;
+  background-size: cover;
+  max-height: 800px;
+  padding: 100px 80px 215px;
+}
+
+.recipes__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  max-width: 580px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 24px;
+}
+.recipes__subtitle {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 438px;
+  margin-bottom: 80px;
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.recipes__video-type-content {
+  border: none;
+}
+.recipes__video-caption {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipes__video-caption-type-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.recipes__video-caption-type-time {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-position: center;
+  background-size: cover;
+  min-height: 720px;
+  max-height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.reservation__title {
+  margin-top: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+.reservation__form {
+  padding: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.form__personal_info {
+  padding: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: 0;
+  border-style: none;
+}
+.form__personal_info_label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form__personal_info_item {
+  border-radius: 4px;
+  width: 100%;
+  padding: 0;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+}
+
+.form__sumbit_button {
+  background-color: #2e80ed;
+  color: #fff;
+  width: 100%;
+  height: 34px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  padding: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form__submit {
+  width: 279px;
+  padding: 0;
+  border-style: none;
+  border-radius: 4px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: 0;
+}
+.from__submit_radio {
+  justify-self: center;
+  background-color: #2e80ed;
+  background-image: url(../images/check.svg);
+  margin-right: 20px;
+  font-family: "Inter";
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.about {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #0a2750;
+}
+.about__title {
+  width: 300px;
+  color: #fff;
+  padding-top: 100px;
+  margin-left: 80px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  z-index: 2;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+.about__content {
+  width: 500px;
+  margin: 100px 80px 173px auto;
+  row-gap: 20px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.about__paragraph {
+  color: #fff;
+  margin-top: 19px;
+}
+.about_circle {
+  background-color: #2e80ed;
+  position: absolute;
+  top: -152px;
+  left: -129px;
+  border-radius: 50%;
+  width: 495px;
+  height: 495px;
+}
+
+.footer__footer {
+  position: relative;
+  width: 100%;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 100px 180px 80px;
+}
+.footer__image {
+  width: 153px;
+  height: 100%;
+}
+.footer__content_header {
+  color: #fff;
+  padding-bottom: 25px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+}
+
+.footer__list,
+.footer__list-link {
+  padding-bottom: 15px;
+  color: #fff;
+  list-style: none;
+  padding-inline-start: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer_copyrights {
+  color: #fff;
+  padding-left: 80px;
+  padding-bottom: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
