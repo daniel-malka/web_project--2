@@ -10,7 +10,7 @@
       keywords="cafe coffe lattee esspresso BEM-methdoligy"
     />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./coffee _beans.ico" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,10 +38,18 @@
         />
         <nav class="nav">
           <ul class="nav__links">
-            <li class="nav__links_item">Menu</li>
-            <li class="nav__links_item">Recipes</li>
-            <li class="nav__links_item">Book a table</li>
-            <li class="nav__links_item">Contacts</li>
+            <li class="nav__links_item">
+              <a href="#menu" class="nav__links_item">Menu</a>
+            </li>
+            <li class="nav__links_item">
+              <a href="#recipes" class="nav__links_item">Recipes</a>
+            </li>
+            <li class="nav__links_item">
+              <a href="#reservation" class="nav__links_item">Book a table</a>
+            </li>
+            <li class="nav__links_item">
+              <a href="contacts" class="nav__links_item">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="header__text">
@@ -67,7 +75,7 @@
         </div>
       </header>
       <main class="content">
-        <section class="menu">
+        <section class="menu" id="menu">
           <h1 class="menu__title">Menu</h1>
           <p class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
@@ -77,21 +85,21 @@
             <div class="card__filter">
               <h3 class="card__title_type-filter">Filter</h3>
               <ul class="card__list_type-filter">
-                <li class="menu_type_filter-items">
+                <li class="card__item_type-filter">
                   Regular(12oz)______________________________________________________$1
                 </li>
-                <li class="menu_type_filter-items">
+                <li class="card__item_type-filter">
                   Large(16oz)_____________________________________________________$1.25
                 </li>
-                <li class="menu_type_filter-items">
+                <li class="card__item_type-filter">
                   XL
                   (20oz)_________________________________________________________$1.5
                 </li>
-                <li class="menu_type_filter-items">
-                  Party-Size (24 oz,
+                <li class="card__item_type-filter">
+                  Party-Size (24 oz)
                   decaf)_________________________________________$1.75
                 </li>
-                <li class="menu_type_filter-items">
+                <li class="card__item_type-filter">
                   Iced Coffe (16
                   oz)________________________________________________$1.25
                 </li>
@@ -140,7 +148,7 @@
             </div>
           </div>
         </section>
-        <section class="recipes">
+        <section class="recipes" id="recipes">
           <h1 class="recipes__title">Recipes</h1>
           <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -180,7 +188,7 @@
             </div>
           </div>
         </section>
-        <section class="reservation">
+        <section class="reservation" id="reservation">
           <h1 class="reservation__title">Book a table</h1>
           <form class="reservation__form">
             <fieldset class="form__personal_info">
@@ -190,7 +198,7 @@
                   type="text"
                   id="name"
                   name="name"
-                  value="Name Surname"
+                  value=" Name Surname"
                   class="form__personal_info_item"
                 />
               </label>
@@ -200,7 +208,7 @@
                   type="number"
                   name="number of guests"
                   id="number-of"
-                  value="1-8"
+                  placeholder=" 1-8"
                   min="1"
                   max="8"
                   class="form__personal_info_item"
@@ -208,19 +216,22 @@
               </label>
               <label for="date&time" class="form__personal_info_label"
                 >Date & Time *
-                <input
-                  type="date"
-                  name="date"
-                  value="dd.mm.yyyy"
-                  class="form__personal_info_item"
-                />
               </label>
+              <input
+                type="date"
+                id="date&time"
+                name="date&time"
+                min="2000-01-01"
+                max="2030-01-01"
+                value=" dd.mm.yyyy"
+                class="form__personal_info_item"
+              />
               <label for="e-mail" class="form__personal_info_label"
                 >Your email *
                 <input
                   type="email"
                   name="email"
-                  value="email@email.com"
+                  placeholder=" mail@email.com"
                   class="form__personal_info_item"
                 />
               </label>
@@ -240,7 +251,7 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="contacts">
         <section class="about">
           <h1 class="about__title">About the coffee shop</h1>
           <div class="about__content">
@@ -256,7 +267,8 @@
               don't sell single-use cups. But you can buy one of our reusable
               cups!
             </p>
-            <div class="about_circle"></div>
+            <div class="about__circle"></div>
+            <div class="about__circle_animation_blurred"></div>
           </div>
           <div class="footer__footer">
             <div class="footer__content">
