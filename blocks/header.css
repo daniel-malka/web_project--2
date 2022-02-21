@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: #fff;
   background-image: url(../images/background_header.svg);
   background-position: center;
@@ -33,6 +34,7 @@
   display: flex;
   list-style-type: none;
   font-size: 16px;
+  line-height: 20px;
   column-gap: 20px;
 }
 
@@ -44,25 +46,7 @@
 .nav__link:hover {
   color: #2f80ed;
 }
-.nav__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1.5px;
-  width: 100%;
-  background: #000;
-  transition: background 300ms 100ms ease-in-out;
-  transform: scalex(0);
-  transform-origin: right;
-  transition: transform 350ms ease-in-out;
-}
 
-.nav__link:hover::after {
-  transform: scalex(1);
-  transform-origin: left;
-  background: #2f80ed;
-}
 .header__title-styled {
   z-index: 2;
   font-family: "Noto Serif", "Times New Roman", "serif";
