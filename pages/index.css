@@ -1,9 +1,9 @@
 @import "../vendor/normalize.css";
-@import "/blocks/header.css";
-@import "/blocks/menu.css";
-@import "/blocks/recipes.css";
-@import "/blocks/form.css";
-@import "/blocks/footer.css";
+@import "../blocks/header.css";
+@import "../blocks/menu.css";
+@import "../blocks/recipes.css";
+@import "../blocks/form.css";
+@import "../blocks/footer.css";
 * {
   margin: 0;
 }
