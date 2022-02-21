@@ -4,6 +4,7 @@
 @import "../blocks/recipes.css";
 @import "../blocks/form.css";
 @import "../blocks/footer.css";
+
 * {
   margin: 0;
 }
