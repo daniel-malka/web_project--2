@@ -1,0 +1,130 @@
+.header {
+  background-color: #fff;
+  background-image: url(../images/background_header.svg);
+  background-position: center;
+  background-size: cover;
+  min-height: 720px;
+  max-height: 800px;
+  display: flex;
+  padding: 30px 80px 40px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  top: 30px;
+  right: 40px;
+  font-family: "Inter", "Ariel", "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  font-size: 16px;
+  column-gap: 20px;
+}
+
+.nav__link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: #2f80ed;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5px;
+  width: 100%;
+  background: #000;
+  transition: background 300ms 100ms ease-in-out;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 350ms ease-in-out;
+}
+
+.nav__link:hover::after {
+  transform: scalex(1);
+  transform-origin: left;
+  background: #2f80ed;
+}
+.header__title-styled {
+  z-index: 2;
+  font-family: "Noto Serif", "Times New Roman", "serif";
+  padding-top: 202px;
+  padding-bottom: 28px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 72px;
+  color: #2f80ed;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.header__title {
+  font-family: "Inter", "Ariel", "sans-serif";
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.header__description {
+  max-width: 600px;
+  margin-top: 28px;
+  font-family: "Noto Serif", "Times New Roman", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.header__caffe-image {
+  max-width: 636px;
+  height: auto;
+  position: absolute;
+  top: 124px;
+  right: 5px;
+}
+
+.header__footer {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.header__hours-list {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Inter", "Ariel", "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.header__address {
+  margin-block-end: 0;
+  margin-inline-end: 0px;
+  font-family: "Inter", "Ariel", "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
