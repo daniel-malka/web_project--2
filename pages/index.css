@@ -1,12 +1,11 @@
 @import "../vendor/normalize.css";
+
 @import "../blocks/header.css";
 @import "../blocks/menu.css";
 @import "../blocks/recipes.css";
 @import "../blocks/form.css";
 @import "../blocks/footer.css";
 
-* {
-  margin: 0;
 }
 .page {
   font-family: "Inter", "Ariel", "sans-serif";
