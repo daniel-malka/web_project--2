@@ -37,12 +37,12 @@
         />
         <nav class="nav">
           <ul class="nav__links">
-              <li class="nav__item">
+            <li class="nav__item">
               <a href="#menu" class="nav__link">Menu</a>
             </li>
             <li class="nav__item">
               <a href="#recipes" class="nav__link">Recipes</a>
-            </liss=>
+            </li>
             <li class="nav__item">
               <a href="#reservation" class="nav__link">Book a table</a>
             </li>
@@ -51,8 +51,10 @@
             </li>
           </ul>
         </nav>
-        <h1 class="header__title"><span class="header__span-accent">Specialty coffee</span>
-        in the Practicum Library</h1>
+        <h1 class="header__title">
+          <span class="header__span-accent">Specialty coffee</span> in the
+          Practicum Library
+        </h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
           the cozy vibes to help you get creative.
@@ -66,9 +68,7 @@
           <ul class="header__hours-list">
             <li class="header__paragraph">Hours:</li>
             <li class="header__paragraph">Monday – Friday (10:00 – 19:00)</li>
-            <li class="header__paragraph">
-              Saturday – Sunday (11:00 – 18:00)
-            </li>
+            <li class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</li>
           </ul>
           <p class="header__paragraph">
             200 Success Avenue, The Town of Practicum
@@ -86,12 +86,13 @@
             <div class="card">
               <h3 class="card__title">Filter</h3>
               <ul class="card__list">
-                <li class="card__item">Regular(12oz)
+                <li class="card__item">
+                  Regular(12oz)
                   <span class="card__divider"></span>
                   $1
                 </li>
                 <li class="card__item">
-                  Large(16oz) 
+                  Large(16oz)
                   <span class="card__divider"></span>
                   $1.25
                 </li>
@@ -126,12 +127,12 @@
                   $2.5
                 </li>
                 <li class="card__item">
-                 Mocha
+                  Mocha
                   <span class="card__divider"></span>
                   $3
                 </li>
                 <li class="card__item">
-                    Sunrise in the Bay Area (decaf)
+                  Sunrise in the Bay Area (decaf)
                   <span class="card__divider"></span>
                   $10
                 </li>
@@ -141,32 +142,32 @@
               <h3 class="card__title">Baked Goods</h3>
               <ul class="card__list">
                 <li class="card__item">
-                  Almond Croissant 
-                <span class="card__divider"></span>
+                  Almond Croissant
+                  <span class="card__divider"></span>
                   $2
                 </li>
                 <li class="card__item">
-              Banana Bread  
-               <span class="card__divider"></span>
+                  Banana Bread
+                  <span class="card__divider"></span>
                   $1.75
                 </li>
                 <li class="card__item">
-               Key Lime Pie  
-                <span class="card__divider"></span>
+                  Key Lime Pie
+                  <span class="card__divider"></span>
                   $3
                 </li>
                 <li class="card__item">
-                  Blue Velvet Cake  
-                <span class="card__divider"></span>
+                  Blue Velvet Cake
+                  <span class="card__divider"></span>
                   $3.75
                 </li>
                 <li class="card__item">
-                Web Cookie  
-           <span class="card__divider"></span>
+                  Web Cookie
+                  <span class="card__divider"></span>
                   $2
                 </li>
                 <li class="card__item">
-              Fresh Buguette
+                  Fresh Buguette
                   <span class="card__divider"></span>
                   $0.25
                 </li>
@@ -181,59 +182,56 @@
             convenience:
           </p>
           <div class="recipes__videos">
+            <iframe
+              class="recipes__video"
+              title="YouTube video player"
+              src="https://www.youtube.com/embed/j6VlT_jUVPc"
+            ></iframe>
+            <div class="recipes__video-caption">
+              <p class="recipes__caption">Aeropress recipe</p>
+              <p class="recipes__caption">~05:12 min</p>
+            </div>
+            <div class="recipes__videos">
               <iframe
-                class="recipes__video"
-                title="YouTube video player"
-                src="https://www.youtube.com/embed/j6VlT_jUVPc"
-              ></iframe>
-              <div class="recipes__video-caption">
-                <p class="recipes__caption">Aeropress recipe</p>
-                <p class="recipes__caption">~05:12 min</p>
-              </div>
-              <div class="recipes__videos">
-                <iframe
                 class="recipes__video"
                 src="https://www.youtube.com/embed/st571DYYTR8"
                 title="YouTube video player"
-                ></iframe>
-                <div class="recipes__video-caption">
-                  <p class="recipes__caption">French press recipe</p>
-                  <p class="recipes__caption">~03:33 min</p>
-                </div>
-              </div>  
-            </div>  
+              ></iframe>
+              <div class="recipes__video-caption">
+                <p class="recipes__caption">French press recipe</p>
+                <p class="recipes__caption">~03:33 min</p>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
           <form class="form reservation__form">
             <fieldset class="form__fieldset">
-              <label for="name" class="form__label"
-                >Name *</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value=" Name Surname"
-                  class="form__input"
-                  required
-                />
-              
+              <label for="name" class="form__label">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value=" Name Surname"
+                class="form__input"
+                required
+              />
+
               <label for="number-of" class="form__label"
                 >Number of guests *
               </label>
-                <input
-                  type="number"
-                  name="number of guests"
-                  id="number-of"
-                  placeholder=" 1-8"
-                  min="1"
-                  max="8"
-                  class="form__input"
-                  required
-                />
-              <label for="date&time" class="form__label"
-                >Date & Time *
-              </label>
+              <input
+                type="number"
+                name="number of guests"
+                id="number-of"
+                placeholder=" 1-8"
+                min="1"
+                max="8"
+                class="form__input"
+                required
+              />
+              <label for="date&time" class="form__label">Date & Time * </label>
               <input
                 type="date"
                 id="date&time"
@@ -244,17 +242,15 @@
                 class="form__input"
                 required
               />
-              <label for="e-mail" class="form__label"
-                >Your email *
-              </label>
-                <input
-                  id="e-mail"
-                  type="email"
-                  name="email"
-                  placeholder=" mail@email.com"
-                  class="form__input"
-                  required
-                />
+              <label for="e-mail" class="form__label">Your email * </label>
+              <input
+                id="e-mail"
+                type="email"
+                name="email"
+                placeholder=" mail@email.com"
+                class="form__input"
+                required
+              />
             </fieldset>
             <fieldset class="form__submit">
               <button class="form__sumbit-button">Book a table</button>
@@ -288,44 +284,39 @@
             <div class="about__circle"></div>
             <div class="about__circle_animation_blurred"></div>
           </div>
-          </section>
-        </main>
-        <section class="footer">
-          <footer class="footer__content">
-            <img
-              src="./images/logo_practicum.svg"
-              alt="yandex practicum logo"
-              class="footer__logo"
-            />
-            <div class="footer__social-list">
-              <h2 class="footer__social-heading">Social Media</h2>
-              <ul class="footer__list">
-                <li class="footer__list-item">
-                  <img
-                    src="./images/facebook_white.svg"
-                    alt="facebook icon"
-                    class="footer__social-icon"
-                  />
-                  <a href="#" class="footer__social-link">
-                    Facebook</a>
-                </li>
-                <li class="footer__list-item">
-                  <img
-                      src="./images/instagram_white.svg"
-                      alt="instagram icon"
-                      class="footer__social-icon"
-                    />
-                  <a href="#" class="footer__social-link"
-                    >
-                    Instagram</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </footer>
-            <p class="footer__copyrights-item">© 2022 Daniel M.</p>
         </section>
-      </footer>
+      </main>
+      <section class="footer">
+        <footer class="footer__content">
+          <img
+            src="./images/logo_practicum.svg"
+            alt="yandex practicum logo"
+            class="footer__logo"
+          />
+          <div class="footer__social-list">
+            <h2 class="footer__social-heading">Social Media</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="facebook icon"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link"> Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="instagram icon"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link"> Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+        <p class="footer__copyrights-item">© 2022 Daniel M.</p>
+      </section>
     </div>
   </body>
 </html>
