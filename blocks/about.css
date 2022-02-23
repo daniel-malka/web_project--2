@@ -61,14 +61,14 @@
   height: 495px;
   z-index: 2;
 }
-.about__circle-blurred {
+.about__circle_animation_blurred {
   background-color: #1c539e;
   position: absolute;
-  top: -172px;
-  left: -149px;
+  top: -152px;
+  left: -129px;
   border-radius: 50%;
-  width: 530px;
-  height: 530px;
+  width: 495px;
+  height: 495px;
   z-index: 1;
   animation: pulsate 1.3s ease-in-out forwards infinite;
 }
