@@ -4,8 +4,8 @@
   background-image: url(../images/background_header.svg);
   background-position: center;
   background-size: cover;
-  min-height: 720px;
-  max-height: 800px;
+  height: 100vh;
+  box-sizing: border-box;
   display: flex;
   padding: 30px 80px 40px;
   padding-bottom: 40px;
@@ -21,9 +21,7 @@
   display: flex;
   position: relative;
   justify-content: flex-end;
-  top: 30px;
-  right: 40px;
-  font-family: "Inter", "Ariel", "sans-serif";
+  font-family: "Inter", "Arial", "sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -34,6 +32,10 @@
   display: flex;
   column-gap: 20px;
   list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  margin-top: 30px;
 }
 
 .nav__link {
@@ -44,12 +46,22 @@
 .nav__link:hover {
   color: #2f80ed;
 }
+.header__title {
+  font-family: "Inter", "Arial", "sans-serif";
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  z-index: 1;
+  margin-bottom: 28px;
+}
 
-.header__title-styled {
-  z-index: 2;
+.header__span-accent {
+  display: block;
   font-family: "Noto Serif", "Times New Roman", "serif";
   padding-top: 202px;
-  padding-bottom: 28px;
   font-style: italic;
   font-weight: normal;
   font-size: 60px;
@@ -58,17 +70,8 @@
   margin-block-start: 0;
   margin-block-end: 0;
 }
-.header__title {
-  font-family: "Inter", "Ariel", "sans-serif";
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 72px;
-}
-
 .header__description {
+  z-index: 1;
   max-width: 600px;
   margin-top: 28px;
   font-family: "Noto Serif", "Times New Roman", "serif";
@@ -76,8 +79,10 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
-.header__caffe-image {
+.header__image {
   max-width: 636px;
   height: auto;
   position: absolute;
@@ -87,15 +92,24 @@
 
 .header__footer {
   display: flex;
+  z-index: 1;
   flex-grow: 1;
   align-items: flex-end;
   justify-content: space-between;
 }
 .header__hours-list {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+.header__paragraph {
+  color: #838383;
   list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: "Inter", "Ariel", "sans-serif";
+  font-family: "Inter", "Arial", "sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -104,7 +118,7 @@
 .header__address {
   margin-block-end: 0;
   margin-inline-end: 0px;
-  font-family: "Inter", "Ariel", "sans-serif";
+  font-family: "Inter", "Arial", "sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

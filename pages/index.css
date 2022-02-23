@@ -1,16 +1,8 @@
 @import "../vendor/normalize.css";
-
+@import "../blocks/pages.css";
 @import "../blocks/header.css";
 @import "../blocks/menu.css";
 @import "../blocks/recipes.css";
 @import "../blocks/form.css";
+@import "../blocks/about.css";
 @import "../blocks/footer.css";
-
-.page {
-  font-family: "Inter", "Ariel", "sans-serif";
-  font-size: 16px;
-  line-height: 20px;
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
-}

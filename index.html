@@ -15,17 +15,12 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./coffee_beans.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
       rel="stylesheet"
@@ -42,22 +37,22 @@
         />
         <nav class="nav">
           <ul class="nav__links">
-            <li class="nav__link">
+              <li class="nav__item">
               <a href="#menu" class="nav__link">Menu</a>
             </li>
-            <li class="nav__link">
+            <li class="nav__item">
               <a href="#recipes" class="nav__link">Recipes</a>
-            </li>
-            <li class="nav__link">
+            </liss=>
+            <li class="nav__item">
               <a href="#reservation" class="nav__link">Book a table</a>
             </li>
-            <li class="nav__link">
+            <li class="nav__item">
               <a href="#contacts" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <h1 class="header__title-styled"><span>Specialty coffee</span></h1>
-        <h1 class="header__title">in the Practicum Library</h1>
+        <h1 class="header__title"><span class="header__span-accent">Specialty coffee</span>
+        in the Practicum Library</h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
           the cozy vibes to help you get creative.
@@ -65,17 +60,17 @@
         <img
           src="./images/inside_coffee.png"
           alt="practicum coffeeshop"
-          class="header__caffe-image"
+          class="header__image"
         />
         <div class="header__footer">
           <ul class="header__hours-list">
-            <li class="header__hours-item">Hours:</li>
-            <li class="header__hours-item">Monday – Friday (10:00 – 19:00)</li>
-            <li class="header__hours-item">
+            <li class="header__paragraph">Hours:</li>
+            <li class="header__paragraph">Monday – Friday (10:00 – 19:00)</li>
+            <li class="header__paragraph">
               Saturday – Sunday (11:00 – 18:00)
             </li>
           </ul>
-          <p class="header__address">
+          <p class="header__paragraph">
             200 Success Avenue, The Town of Practicum
           </p>
         </div>
@@ -88,93 +83,91 @@
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
           <div class="menu__cards">
-            <div class="menu__card">
-              <h3 class="menu__card-title">Filter</h3>
-              <ul class="menu__card-list">
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Regular(12oz)</span>
-                  <span class="menu__card-divider"></span>
+            <div class="card">
+              <h3 class="card__title">Filter</h3>
+              <ul class="card__list">
+                <li class="card__item">Regular(12oz)
+                  <span class="card__divider"></span>
                   $1
                 </li>
-                <li class="menu__card-item">
-                  Large(16oz) <span class="menu__card-divider"></span>
+                <li class="card__item">
+                  Large(16oz) 
+                  <span class="card__divider"></span>
                   $1.25
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">XL (20oz)</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+                  XL (20oz)
+                  <span class="card__divider"></span>
                   $1.5
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Party-Size (24 oz, decaf)</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+                  Party-Size (24 oz, decaf)
+                  <span class="card__divider"></span>
                   $1.75
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Iced Coffe (16 oz)</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+                  Iced Coffe (16 oz)
+                  <span class="card__divider"></span>
                   $1.25
                 </li>
               </ul>
             </div>
-            <div class="menu__card">
-              <h3 class="menu__card-title">Espresso</h3>
-              <ul class="menu__card-list">
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Macchiato</span>
-                  <span class="menu__card-divider"></span>
+            <div class="card">
+              <h3 class="card__title">Espresso</h3>
+              <ul class="card__list">
+                <li class="card__item">
+                  Macchiato
+                  <span class="card__divider"></span>
                   $2.25
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Cortado</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+                  Cortado
+                  <span class="card__divider"></span>
                   $2.5
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Mocha</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+                 Mocha
+                  <span class="card__divider"></span>
                   $3
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text"
-                    >Sunrise in the Bay Area (decaf)</span
-                  >
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+                    Sunrise in the Bay Area (decaf)
+                  <span class="card__divider"></span>
                   $10
                 </li>
               </ul>
             </div>
-            <div class="menu__card">
-              <h3 class="menu__card-title">Baked Goods</h3>
-              <ul class="menu__card-list">
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Almond Croissant</span>
-                  <span class="menu__card-divider"></span>
+            <div class="card">
+              <h3 class="card__title">Baked Goods</h3>
+              <ul class="card__list">
+                <li class="card__item">
+                  Almond Croissant 
+                <span class="card__divider"></span>
                   $2
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Banana Bread</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+              Banana Bread  
+               <span class="card__divider"></span>
                   $1.75
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Key Lime Pie</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+               Key Lime Pie  
+                <span class="card__divider"></span>
                   $3
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Blue Velvet Cake</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+                  Blue Velvet Cake  
+                <span class="card__divider"></span>
                   $3.75
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Web Cookie</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+                Web Cookie  
+           <span class="card__divider"></span>
                   $2
                 </li>
-                <li class="menu__card-item">
-                  <span class="menu__card-text">Fresh Buguette</span>
-                  <span class="menu__card-divider"></span>
+                <li class="card__item">
+              Fresh Buguette
+                  <span class="card__divider"></span>
                   $0.25
                 </li>
               </ul>
@@ -188,55 +181,46 @@
             convenience:
           </p>
           <div class="recipes__videos">
-            <div class="recipes__video">
               <iframe
-                height="273"
-                width="480"
-                class="recipes__video-type-content"
+                class="recipes__video"
                 title="YouTube video player"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"
               ></iframe>
               <div class="recipes__video-caption">
-                <p class="recipes__video-caption-type-title">
-                  Aeropress recipe
-                </p>
-                <p class="recipes__video-caption-type-time">~05:12 min</p>
+                <p class="recipes__caption">Aeropress recipe</p>
+                <p class="recipes__caption">~05:12 min</p>
               </div>
-            </div>
-            <div class="recipes__video">
-              <iframe
-                width="480"
-                height="273"
-                class="recipes__video-type-content"
+              <div class="recipes__videos">
+                <iframe
+                class="recipes__video"
                 src="https://www.youtube.com/embed/st571DYYTR8"
                 title="YouTube video player"
-              ></iframe>
-              <div class="recipes__video-caption">
-                <p class="recipes__video-caption-type-title">
-                  French press recipe
-                </p>
-                <p class="recipes__video-caption-type-time">~03:33 min</p>
-              </div>
-            </div>
-          </div>
+                ></iframe>
+                <div class="recipes__video-caption">
+                  <p class="recipes__caption">French press recipe</p>
+                  <p class="recipes__caption">~03:33 min</p>
+                </div>
+              </div>  
+            </div>  
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
-          <form class="reservation__form">
-            <fieldset class="reservation__personal-info">
-              <label for="name" class="reservation__personal-info-label"
-                >Name *
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label"
+                >Name *</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   value=" Name Surname"
-                  class="reservation__personal-info"
+                  class="form__input"
                   required
                 />
-              </label>
-              <label for="number-of" class="reservation__personal-info-label"
+              
+              <label for="number-of" class="form__label"
                 >Number of guests *
+              </label>
                 <input
                   type="number"
                   name="number of guests"
@@ -244,11 +228,10 @@
                   placeholder=" 1-8"
                   min="1"
                   max="8"
-                  class="reservation__personal-info"
+                  class="form__input"
                   required
                 />
-              </label>
-              <label for="date&time" class="reservation__personal-info-label"
+              <label for="date&time" class="form__label"
                 >Date & Time *
               </label>
               <input
@@ -258,37 +241,35 @@
                 value=""
                 min="2017-04-01"
                 max="2030-01-01"
-                class="reservation__personal-info"
+                class="form__input"
                 required
               />
-              <label for="e-mail" class="reservation__personal-info-label"
+              <label for="e-mail" class="form__label"
                 >Your email *
+              </label>
                 <input
                   id="e-mail"
                   type="email"
                   name="email"
                   placeholder=" mail@email.com"
-                  class="reservation__personal-info"
+                  class="form__input"
                   required
                 />
-              </label>
             </fieldset>
-            <fieldset class="reservation__submit">
-              <button class="reservation__sumbit-button">Book a table</button>
+            <fieldset class="form__submit">
+              <button class="form__sumbit-button">Book a table</button>
               <input
                 type="checkbox"
-                class="reservation__submit-radio"
+                class="form__input-radio"
                 id="radioC"
                 required
               />
-              <label for="radioC" class="reservation__submit-radio"
+              <label for="radioC" class="form__submit-radio"
                 >I agree with the terms of use</label
               >
             </fieldset>
           </form>
         </section>
-      </main>
-      <footer class="footer" id="contacts">
         <section class="about">
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
@@ -305,43 +286,44 @@
               cups!
             </p>
             <div class="about__circle"></div>
-            <div class="about__animation-blurred"></div>
+            <div class="about__circle_animation_blurred"></div>
           </div>
-          <div class="footer__footer">
-            <div class="footer__content">
-              <img
-                src="./images/logo_practicum.svg"
-                alt="yandex practicum logo"
-                class="footer__image"
-              />
-              <div class="footer__bar">
-                <h2 class="footer__header">Social Media</h2>
-                <ul class="footer__list">
-                  <li class="footer__item">
-                    <a href="#" class="footer__link"
-                      ><img
-                        src="./images/facebook_white.svg"
-                        alt="facebook icon"
-                        class="footer__social-icon"
-                      />
-                      Facebook</a
+          </section>
+        </main>
+        <section class="footer">
+          <footer class="footer__content">
+            <img
+              src="./images/logo_practicum.svg"
+              alt="yandex practicum logo"
+              class="footer__logo"
+            />
+            <div class="footer__social-list">
+              <h2 class="footer__social-heading">Social Media</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <img
+                    src="./images/facebook_white.svg"
+                    alt="facebook icon"
+                    class="footer__social-icon"
+                  />
+                  <a href="#" class="footer__social-link">
+                    Facebook</a>
+                </li>
+                <li class="footer__list-item">
+                  <img
+                      src="./images/instagram_white.svg"
+                      alt="instagram icon"
+                      class="footer__social-icon"
+                    />
+                  <a href="#" class="footer__social-link"
                     >
-                  </li>
-                  <li class="footer__item">
-                    <a href="#" class="footer__list"
-                      ><img
-                        src="./images/instagram_white.svg"
-                        alt="instagram icon"
-                        class="footer__social-icon"
-                      />
-                      Instagram</a
-                    >
-                  </li>
-                </ul>
-              </div>
+                    Instagram</a
+                  >
+                </li>
+              </ul>
             </div>
-            <p class="footer__copyrights">© 2022 Daniel M.</p>
-          </div>
+          </footer>
+            <p class="footer__copyrights-item">© 2022 Daniel M.</p>
         </section>
       </footer>
     </div>
