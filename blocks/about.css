@@ -44,7 +44,12 @@
 }
 .about__paragraph {
   color: #fff;
+  margin-block-start: 0;
+  margin-block-end: 0;
   margin-bottom: 20px;
+}
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 .about__circle {
   background-color: #2e80ed;
