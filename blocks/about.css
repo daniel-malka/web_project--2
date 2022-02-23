@@ -56,7 +56,7 @@
   height: 495px;
   z-index: 2;
 }
-.about__circle_blurred {
+.about__circle-blurred {
   background-color: #1c539e;
   position: absolute;
   top: -172px;
