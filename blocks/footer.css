@@ -46,7 +46,6 @@
 .footer__list-item:hover {
   background-color: #c1c1c1;
   text-shadow: -1px -1px #071931;
-  box-shadow: -10px -5px 10px#071931;
 }
 
 .footer__social-icon {
